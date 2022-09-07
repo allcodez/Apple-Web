@@ -1,0 +1,695 @@
+/* ****** scrollbar design ******** */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border: 1px solid rgb(221, 221, 221);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgb(189, 189, 189), black);
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+main {
+    /* background: green; */
+    background: url(./images/bg4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.section1 {
+    height: 100vh;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.sec1-img {
+    width: 60%;
+    margin-left: 80px;
+    height: 60%;
+    background: url(./images/side-img3-01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+.sec2-img {
+    display: flex;
+    /* width: 50%;
+    height: 50%;
+    background: url(./images/side-img2-01.png);
+    background-size: contain;
+    background-repeat: no-repeat; */
+}
+
+
+#section2 {
+    width: 100%;
+    background: white;
+    height: 100vh;
+}
+
+.sec2-contain {
+    width: 100%;
+    height: 100vh;
+    background: url(./images/rotate-img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 140%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 100px;
+    /* background-attachment: fixed; */
+
+}
+
+.sec2-contain p {
+    text-indent: 5px;
+    text-align: left;
+    font-size: 19px;
+    line-height: 1.2105263158;
+    font-weight: 600;
+    letter-spacing: .012em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.sec2-contain-text {
+    text-align: left;
+    font-size: 85px;
+    margin-top: -80px;
+    line-height: 1.0416666667;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #194bb5;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.sec3 {
+    width: 100%;
+    /* height: 100vh; */
+    background: url(./images/sec3-01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.sec3 h1 {
+    font-size: 65px;
+    line-height: 1.07143 !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px !important;
+    /* margin-top: 10px !important; */
+    padding-top: 120px;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    text-shadow: -1px 2px 4px black;
+    color: #4f83f0;
+    z-index: 10;
+}
+
+.sec4 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(235, 235, 235), white, white);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec4 .sec4-row1 {
+    /* width: 100%; */
+    display: flex;
+}
+
+.sec4 h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    /* font-weight: 600; */
+    letter-spacing: 0em;
+    align-items: center;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.sec4 .sec4-row1 img {
+    margin-left: 25px;
+    width: 90px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+/* .sec4 .sec4-row1 img:hover {} */
+
+.sec4 .sec4-row2 {
+    /* display: flex; */
+    margin-top: 40px;
+    text-align: center;
+    width: 35%;
+    font-size: 21px;
+    line-height: 1.2105263158;
+    font-weight: 100 !important;
+    letter-spacing: .012em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.sec4 .sec4-row3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background: green; */
+    color: #009DE4;
+    margin-top: 60px;
+
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -0.003em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.sec4 .sec4-row3 .num1 {
+    margin: 0px 100px 0 0;
+    /* color: #009DE4; */
+}
+
+.sec4 .sec4-row3 div b {
+    color: black;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+/* .sec4 .sec4-row3 .num2 h1{
+    margin-left: 10px 0 0 20px;
+} */
+
+/* .sec-space {
+    height: 20vh;
+    width: 100%;
+} */
+
+
+.sec5 {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 300px 0 0 0; */
+}
+
+.sec5-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/macbook-air-midnight1-01-01-01-min.jpg);
+    background-size: cover;
+    /* background-position: left; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-position: 450px;
+    /* padding: 20px 10%; */
+    transition: background-image 0.3s;
+}
+
+
+
+
+
+
+.color-select div {
+    background: #333;
+    margin-top: -12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #7d7e80;
+}
+
+.color-select {
+    transform: rotate(90deg);
+    display: flex;
+    margin-top: 30px;
+}
+
+.color-select #midnight {
+    background: #2e3641;
+}
+
+.color-select #starlight {
+    background: #f0e5d3;
+}
+
+.color-select #spacegray {
+    background: #7d7e80;
+}
+
+.color-select #silver {
+    background: #e3e4e6;
+}
+
+.section1a {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .sec2-contain center {
+        padding-left: 50px;
+    }
+
+    .sec2-contain-text {
+        text-align: left;
+        font-size: 70px;
+        margin-top: -50px;
+        line-height: 1.0416666667;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #194bb5;
+    }
+}
+
+@media (max-width: 1000px) {
+    main {
+        background: green;
+        background: url(./images/bg4.jpg);
+        background-size: contain;
+        background-position: bottom;
+        /* background-attachment: fixed; */
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 50vh;
+    }
+
+    .sec2-img {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sec1-img {
+        display: none;
+    }
+
+    .sec2-contain-text {
+        text-align: left;
+        font-size: 45px;
+        margin-top: 0px;
+        line-height: 1.0416666667;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #194bb5;
+    }
+
+    .sec2-contain p {
+        text-indent: 4px;
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.2105263158;
+        font-weight: 600;
+        letter-spacing: .012em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    .sec4 .sec4-row2 {
+        /* display: flex; */
+        margin-top: 40px;
+        text-align: center;
+        width: 50%;
+        font-size: 18px;
+        line-height: 1.2105263158;
+        font-weight: 100 !important;
+        letter-spacing: .012em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    .sec4 .sec4-row1 img {
+        margin-left: 25px;
+        width: 70px;
+        filter: drop-shadow(5px 5px 5px #222);
+    }
+
+    .sec4 h1 {
+        font-size: 55px;
+        line-height: 1.1;
+        /* font-weight: 600; */
+        letter-spacing: 0em;
+        align-items: center;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .sec5-img {
+        background-position: 251px;
+    }
+
+    .sec2-contain {
+        background-size: 200%;
+    }
+
+
+    .sec4 h1 {
+        font-size: 40px;
+        line-height: 1.1;
+        /* font-weight: 600; */
+        letter-spacing: 0em;
+        align-items: center;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    .sec4 .sec4-row1 img {
+        margin-left: 25px;
+        width: 50px;
+        filter: drop-shadow(5px 5px 5px #222);
+    }
+
+    .sec2-contain center {
+        padding-left: 70px;
+    }
+
+    .sec2-contain-text {
+        text-align: left;
+        font-size: 35px;
+        margin-top: -15px;
+        line-height: 1.0416666667;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: #194bb5;
+    }
+}
+
+
+
+@media (max-width: 520px) {
+    main {
+        background: green;
+        background: url(./images/bg4.jpg);
+        background-size: contain;
+        background-position: bottom;
+        /* background-attachment: fixed; */
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 50vh;
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    #section1,
+    #sectio,
+    #sectio,
+    .sec,
+    .sec,
+    .sec3 {
+        display: none;
+    }
+
+    .section1a {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .section1a .sec1-img {
+        /* width: 100%; */
+        height: 42vh;
+        background: url(./images/side-img3-01.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .sec1-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sec1-flex img {
+        width: 240px;
+        /* margin-left: 20px; */
+    }
+
+    .sec1-flex img:nth-child(1) {
+        margin-right: 20px;
+    }
+
+    .sec1-flex img:nth-child(2) {
+        /* margin-left: 200px; */
+    }
+
+    .sec2-contain {
+
+        height: 54vh;
+    }
+
+    #section2 {
+        height: 50vh;
+    }
+
+    .sec4 .sec4-row2 {
+        width: 85%;
+    }
+
+}
+
+.sec6 {
+    width: 100%;
+    height: 70vh;
+    /* background: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+.sec6 center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.sec6-box1,
+.sec6-box2 {
+    width: 30%;
+    height: 50%;
+    /* background: yellow; */
+    margin: 5px;
+    padding: 55px;
+    font-size: 17px;
+    line-height: 1.4705882353;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    font-style: normal;
+}
+
+/* .sec6-box1 p,
+.sec6-box2 p {
+    padding: 20px;
+} */
+
+@media (max-width: 1000px) {
+
+    .sec6-box1,
+    .sec6-box2 {
+        width: 40%;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .sec6-box1,
+    .sec6-box2 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .sec6 {
+        display: block;
+    }
+
+    .sec6-box1,
+    .sec6-box2 {
+        width: 90%;
+        /* margin: 0 !important; */
+    }
+
+    /* .sec6-box1,
+    .sec6-box2 {
+        width: 50%;
+    } */
+}
+
+.sec7 {
+    width: 100%;
+    height: 110vh;
+    background: url(./images/sec7bg-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sec7 center {
+    padding-top: 650px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-end; */
+}
+
+.sec7 button {
+    padding: 15px 50px;
+    background-color: initial;
+    color: #1d1d1f;
+    border: 3px solid #1d1d1f;
+    transition: background-color 350ms ease-in-out, color 350ms ease-in-out;
+    z-index: 1;
+    font-size: 21px;
+    line-height: 1.1904761905;
+    font-weight: 600;
+    /* letter-spacing: .011em; */
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    border-radius: 40px;
+}
+
+.sec7 button:hover {
+    background: #1d1d1f;
+    color: white;
+}
+
+.sec7 button i {
+    margin-left: 5px;
+}
+
+.sec7-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 135px;
+    margin-bottom: 75px;
+    padding: 30px;
+}
+
+.sec7 h2 {
+    font-size: 64px;
+    line-height: 1.0625;
+    font-weight: 600;
+    letter-spacing: -0.009em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 520px) {
+    .sec7 h2 {
+        font-size: 54px;
+
+    }
+}
+
+.sec8 {
+    width: 100%;
+    height: 150vh;
+    background: url(./images/sec8bg-01.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 450px;
+}
+
+.sec8-content {
+    width: 100%;
+    height: 150vh;
+    padding-bottom: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec8-title {
+    font-size: 19px;
+    line-height: 1.2105263158;
+    font-weight: 600;
+    padding: 35px 0px;
+    letter-spacing: .012em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.sec8-header {
+    text-align: center;
+    font-size: 96px;
+    line-height: 1.0416666667;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #194ab5d2;
+}
+
+@media (max-width: 520px) {
+    .sec8 {
+        height: 80vh;
+    }
+
+    .sec8-header {
+        font-size: 50px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
